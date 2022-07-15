@@ -1,0 +1,32 @@
+.title {
+    position: absolute;
+    left: 30%;
+    top: 0%;
+    color: hsla(180, 100%, 20%, .5);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20vh;
+}
+
+label {
+    height: 10vh;
+    width: 100vw;
+    background-color: hsla(180, 100%, 20%, .4);
+    padding: 3vh;
+    margin: 3vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.todo {
+    height: 100vh;
+    /* width: 50vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todos {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* width: 50vw; */
+}
