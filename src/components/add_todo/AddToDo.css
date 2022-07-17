@@ -1,32 +1,83 @@
-.title {
+@import url('/node_modules/bootstrap/dist/css/bootstrap.min.css');
+
+* {
+    z-index: 1;
+}
+
+/* .title {
     position: absolute;
     left: 30%;
     top: 0%;
     color: hsla(180, 100%, 20%, .5);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20vh;
+} */
+
+.add-to-do {
+    height: 100vh;
 }
 
+/* 
 label {
     height: 10vh;
-    width: 100vw;
+    width: 50vw;
     background-color: hsla(180, 100%, 20%, .4);
     padding: 3vh;
     margin: 3vh;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.todo {
-    height: 100vh;
-    /* width: 50vw; */
+
+
+ */
+
+.add-to-do-create {
+    width: 50%;
+    /* margin: 2vh; */
+    padding: 5vh;
+    transition: width 1s ease-in-out;
+}
+
+
+
+
+.nav-link {
+    font-size: 3vh;
+}
+
+.add-to-do-body {
     display: flex;
+    justify-content: start;
+    align-items: start;
+    display: flex;
+    height: 80vh;
+}
+
+.nav {
+    height: 20vh;
     justify-content: center;
     align-items: center;
 }
 
-.todos {
+.add-to-do-todos {
+    width: 50vw;
+    /* height: 50vh; */
     display: grid;
     justify-content: center;
-    align-items: center;
-    /* width: 50vw; */
+    align-items: flex-start;
+}
+
+
+.todo-title {
+    width: 20vh;
+    /* text-align: center; */
+    position: absolute;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: .5;
+    font-size: 12vh;
+    top: 45%;
+    /* left: 50%; */
+    z-index: 0;
+    user-select: none;
 }

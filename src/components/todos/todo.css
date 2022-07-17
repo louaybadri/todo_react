@@ -1,0 +1,20 @@
+.todo {
+    width: 50vw;
+    text-align: start;
+    background-color: hsla(0deg, 0%, 50%, .3);
+    margin-left: 3vh;
+    margin-right: 3vh;
+    padding: 5%;
+    box-shadow: 10px 0px 10px 0px hsla(0deg, 0%, 50%, .7);
+    /* border-radius: 2%; */
+}
+
+.todo h4 {
+    text-align: end;
+    opacity: .7;
+}
+
+.btn {
+    margin-left: 3vh;
+    margin-right: 3vh;
+}
