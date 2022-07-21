@@ -1,30 +1,40 @@
-import React from 'react';
-import './add.css'
+import React, { useState } from 'react';
+import './add.css';
+
 
 const AddToDos = (props) => {
+    const [_todo, set_todo] = useState('')
+    const setGenTodo = (todo) => {
+        set_todo(todo)
+        props.setTodo(todo)
+    }
     return (
         <div>
 
             <label for="validationDefault01 ">Do you have something in your mind ?</label>
             <input class="form-control" id="validationDefault01" type={"text"} name="task"
-                value={props.todo}
+                value={_todo}
                 onChange={(e) => {
-                    props.setTodo(e.target.value);
+                    setGenTodo(
+                        e.target.value)
                 }
                 }
             />
-            <input class="form-control" id="validationDefault01" type={'time'} name="task"
-                value={props.todo}
-                onChange={(e) => {
-                    props.setTodo(e.target.value);
-                }
-                }
-            />
+            {/* <input type={'time'} onChange={(e) => {
+                props.setDate(e.target.value)
+            }}
+                color={"red"}
+            /> */}
+            <input type={'datetime-local'} onChange={(e) => {
+                props.setDate(e.target.value)
+            }} />
             <input
                 className='btn btn-primary' onClick={() => {
-                    props.sumbit(props.id)
+                    props.sumbit({ date: props.date })
+                    set_todo('')
 
-                }} type='submit' value="submit" />
+
+                }} type='submit' value="Add" />
 
         </div>
     )

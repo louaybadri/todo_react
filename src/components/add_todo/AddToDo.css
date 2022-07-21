@@ -61,10 +61,14 @@ label {
 
 .add-to-do-todos {
     width: 50vw;
+    height: 80vh;
     /* height: 50vh; */
     display: grid;
     justify-content: center;
-    align-items: flex-start;
+    grid-template-columns: auto auto;
+    overflow-x: scroll;
+    background-color: hsla(0deg, 0%, 50%, .1);
+
 }
 
 
